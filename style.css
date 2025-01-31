@@ -1,0 +1,564 @@
+/* Resetting margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #04befc;
+    color: #09bbe7;
+    margin: 0;
+}
+
+
+
+
+
+/* Header Styling */
+header nav ul {
+    list-style: none;
+    text-align: center;
+
+  }
+  header{
+color: #64b4f5;
+padding: 20px;
+background-color: #9edafd;
+  }
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: rgb(247, 71, 17);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  header nav ul li a:hover {
+    color: #4e9feb; /* Change link color on hover */
+  }
+
+/* Header container to align content */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* Company name styling */
+.company-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-out forwards; /* Animation for fading in the name */
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+
+/* Animation for fading in header elements */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Main content area (example) */
+.main-content {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #dd0505;
+    margin-top: 30px;
+}
+
+.main-content h2 {
+    font-size: 3rem;
+    color: #1E2A47;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    color: #050505;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-name {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('./bf7f543e18f8b9e7d800d1605e5523bf.jpg'); /* Replace with your image path */
+    background-size:contain;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(8, 8, 224);
+}
+
+/* Hero Content Styling */
+.hero-content {
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Custom font for the heading */
+    animation: fadeIn 1.5s ease-out forwards; /* Fade-in animation */
+}
+
+.hero-subheading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif; /* Custom font for the subheading */
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards; /* Fade-in animation with delay */
+}
+
+.hero-button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #56aafd;
+    color: rgb(9, 10, 10);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.hero-button:hover {
+    background-color: #2980b9;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Main Content Section */
+.main-content {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #02c1fc;
+}
+
+.main-content h2 {
+    font-size: 2.5rem;
+    color: #080808;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    color: #080707;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2.5rem;
+    }
+
+    .hero-subheading {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+    }
+}
+
+
+
+  
+  /* General Card Styling */
+  .project-card {
+    
+    width: 300px; /* Set the width of the card */
+    height: 300px; /* Set the height equal to the width */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Optional: Adjust padding */
+    
+  
+  }.project-card img {
+    height: 180px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Styling */
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Card Body Styling */
+  .project-card .card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Card Title Styling */
+  .project-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #313131;
+  }
+  
+  /* Card Text Styling */
+  .project-card .card-text {
+    font-size: 1rem;
+    color: #5871ff;
+    margin-bottom: 15px;
+  }
+  
+  /* Button Styling */
+  .project-card .btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+  
+  /* Outline Button Hover Effects */
+  .project-card .btn-outline-primary:hover {
+    background-color: #04a3ff;
+    color: #fff;
+  }
+  
+  .project-card .btn-outline-secondary:hover {
+    background-color: #013f75;
+    color: #fff;
+  }
+  
+  
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9900ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #76abe4;
+  }
+  #contact {
+    padding: 50px 20px;
+    background-color: #0456f0;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0474f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  form button:hover {
+    background-color: #0471f7;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    margin: 0 15px;
+    color: #011130;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #070707;
+    color: rgb(247, 243, 243);
+    padding: 20px ;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 20px;
+    margin: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.home{
+  background-image: url(./DALL·E\ 2025-01-24\ 14.53.22\ -\ A\ sleek\ and\ modern\ logo\ design\ representing\ high\ technology.\ The\ logo\ features\ a\ minimalist\ design\ with\ interconnected\ geometric\ shapes\ resembling\ a\ c.webp);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+text-align: center;
+color: #0258c7;
+margin-bottom: 100px;
+
+} 
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Arial', sans-serif;
+    }
+    .about-section {
+        padding: 80px 0;
+        background: white;
+        color: #333;
+    }
+    .about-section img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .about-content {
+        text-align: left;
+    }
+    .about-content h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #007bff;
+    }
+    .about-content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    .btn-custom {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn-custom:hover {
+        background-color: #0056b3;
+    }
+   
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .our-section {
+            padding: 80px 0;
+            background: white;
+            color: #333;
+        }
+        .our-section img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .our-content {
+            text-align: left;
+        }
+        .our-content h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .our-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
